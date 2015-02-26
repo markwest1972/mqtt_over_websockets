@@ -1,0 +1,8 @@
+{
+  "name": "mqtt_over_websockets",
+  "version": "0.0.2",
+  "description": "Voice Controlled Arduino",
+  "dependencies": {
+    "mqtt": "*",
+  }
+}
