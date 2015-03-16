@@ -8,25 +8,11 @@
 <script src="browserMqtt.js"></script>
 <script>
 
-      // Works fine
-/*      var options = {
-        host: "broker.mqttdashboard.com",
-        port: 8000
-      };*/
+      // WebSockets (non WS MQTT is normally 1883)
+      var options = { host: "test.mosca.io", port: 80 };
+      //var options = { host: "test.mosquitto.org", port: 8080 };
+      //var options = { host: "broker.mqttdashboard.com", port: 8000 };
 
-      // Doesn't work
-      var options = {
-        host: "iot.eclipse.org",
-        port: 80
-      };
-
-      // Doesn't work
-/*
-      var options = {
-        host: "test.mosquitto.org",
-        port: 8080
-      };
-*/
       var client = mqtt.connect(options);
 
       console.log(client);
